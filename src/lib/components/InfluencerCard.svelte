@@ -4,7 +4,7 @@
 	let loaded = $state(false);
 
 	
-	const optimizedImageUrl = `${influencer.foto_url}/m/600x0/filters:quality(80):format(webp)`;
+	const optimizedImageUrl = `${influencer.foto_url}/m/600x0/filters:quality(90):format(webp)`;
 	const placeholderImageUrl = `${influencer.foto_placeholder_url}/m/20x0/filters:blur(10)`;
 </script>
 
