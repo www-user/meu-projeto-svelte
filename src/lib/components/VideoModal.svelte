@@ -69,7 +69,6 @@
 {/if}
 
 <style>
-	/* ... seu CSS continua o mesmo ... */
     .overlay {
 		position: fixed;
 		top: 0;
@@ -112,7 +111,7 @@
 
 	.video-container {
 		position: relative;
-		padding-bottom: 56.25%; /* Proporção 16:9 */
+		padding-bottom: 56.25%; 
 		height: 0;
 		overflow: hidden;
 		border-radius: var(--raio-borda);

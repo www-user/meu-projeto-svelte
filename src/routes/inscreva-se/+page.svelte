@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { fly } from 'svelte/transition';
-	import type { ActionData } from './$types'; // Importa o tipo correto para os dados da Action
+	import type { ActionData } from './$types';
 
-	// Define explicitamente o tipo da prop 'form'
+	
 	const { form } = $props<{ form: ActionData }>();
 </script>
 
@@ -65,7 +65,6 @@
 </div>
 
 <style>
-	/* O seu CSS permanece o mesmo */
 	.container { max-width: 800px; margin: 4rem auto; padding: 2rem; }
 	.page-header { text-align: center; margin-bottom: 3rem; }
 	h1 { font-family: var(--fonte-serif); font-size: 2.5rem; }

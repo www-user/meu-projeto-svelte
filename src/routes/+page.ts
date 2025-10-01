@@ -18,7 +18,7 @@ interface RawStoryblokStory {
 }
 
 export const load: PageLoad = async () => {
-	// Acessamos a variável de ambiente diretamente do objeto 'import.meta.env' do Vite
+	
 	const accessToken = import.meta.env.VITE_STORYBLOK_ACCESS_TOKEN;
 
 	storyblokInit({
@@ -36,7 +36,7 @@ export const load: PageLoad = async () => {
 		const influencers: Influencer[] = data.stories.map((story: RawStoryblokStory & { slug: string }) => {
 			return {
 				id: story.id,
-				slug: story.slug, // <-- ADICIONADO
+				slug: story.slug, 
 				nome: story.content.nome,
 				arroba: story.content.arroba,
 				nicho: story.content.nicho,

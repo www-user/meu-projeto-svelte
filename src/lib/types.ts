@@ -1,7 +1,6 @@
-// src/lib/types.ts
 export interface Influencer {
 	id: number;
-	slug: string; // <-- ADICIONE ESTA LINHA
+	slug: string; 
 	nome: string;
 	arroba: string;
 	nicho: string;

@@ -1,9 +1,9 @@
-// src/routes/inscreva-se/+page.server.ts
+
 import { fail } from '@sveltejs/kit';
 import { influencerSchema } from '$lib/schemas/influencerSchema';
 import { ZodError } from 'zod';
 
-// ATENÇÃO: Adicione estas duas novas variáveis ao seu arquivo .env
+
 const spaceId = import.meta.env.VITE_STORYBLOK_SPACE_ID;
 const apiToken = import.meta.env.VITE_STORYBLOK_MANAGEMENT_TOKEN;
 
@@ -26,11 +26,11 @@ export const actions = {
 						name: validatedData.nome,
 						slug: validatedData.arroba.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
 						content: {
-							component: 'influencer', // O nome técnico do seu "Content Type"
+							component: 'influencer', 
 							...validatedData,
 						},
 					},
-					publish: 0, // 0 = Criar como Rascunho (Draft)
+					publish: 0, 
 				}),
 			});
 

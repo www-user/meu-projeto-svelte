@@ -8,7 +8,7 @@ export default defineConfig({
 		basicSsl()
 	],
 	server: {
-		// Fixa a porta de desenvolvimento para 5174
+		
 		port: 5174
 	}
 });

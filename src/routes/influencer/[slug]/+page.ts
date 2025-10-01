@@ -1,4 +1,4 @@
-// src/routes/influencer/[slug]/+page.ts
+
 import type { PageLoad } from './$types';
 import { storyblokInit, useStoryblokApi, apiPlugin } from '@storyblok/svelte';
 
