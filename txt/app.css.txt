@@ -1,0 +1,40 @@
+/* --- FONTES DO GOOGLE --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap');
+
+/* --- VARIÁVEIS GLOBAIS (DESIGN TOKENS) --- */
+:root {
+    --cor-fundo: #FFFFFF;
+    --cor-texto: #111827;
+    --cor-texto-suave: #6b7280;
+    --cor-borda: #E5E7EB;
+    --cor-destaque: #4F46E5; /* Roxo/Índigo como novo destaque */
+    --cor-branca: #FFFFFF;
+    --fonte-serif: 'Playfair Display', serif; /* Fonte de título mais elegante */
+    --fonte-sans: 'Inter', sans-serif; /* Fonte de texto ultra legível */
+    --sombra-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --raio-borda: 8px;
+}
+
+/* --- RESET BÁSICO E ESTILOS GLOBAIS --- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-sans);
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

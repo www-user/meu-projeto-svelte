@@ -1,0 +1,35 @@
+<script lang="ts">
+	import InfluencerCard from '$lib/components/InfluencerCard.svelte';
+	import VideoModal from '$lib/components/VideoModal.svelte';
+	import { fly } from 'svelte/transition';
+	import { page } from '$app/stores';
+	import type { Influencer } from '$lib/types';
+
+	$: data = $page.data;
+	let activeNicho: string = 'todos';
+
+	// CORREÇÃO: Sintaxe reativa correta, sem anotação de tipo aqui.
+	// O TypeScript infere o tipo 'string[]' automaticamente.
+	$: nichos = data.influencers ? ['todos', ...new Set(data.influencers.map((i: Influencer) => i.nicho))] : ['todos'];
+
+	// CORREÇÃO: Sintaxe reativa correta para a lista filtrada.
+	$: filteredInfluencers =
+		!data.influencers
+			? []
+			: activeNicho === 'todos'
+			? data.influencers
+			: data.influencers.filter((i: Influencer) => i.nicho === activeNicho);
+
+	// A lógica do Modal será movida para a página de detalhes, mas a mantemos aqui por enquanto.
+	let isModalOpen = false;
+	let selectedVideoUrl = '';
+
+	function openModal(videoUrl: string) {
+		selectedVideoUrl = videoUrl;
+		isModalOpen = true;
+	}
+
+	function closeModal() {
+		isModalOpen = false;
+	}
+</script>

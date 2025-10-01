@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nome": "Carla Rossi",
+    "arroba": "carlarossifit",
+    "nicho": "fitness",
+    "foto_url": "assets/images/carla-rossi.jpeg",
+    "foto_placeholder_url": "assets/images/carla-rossi.jpeg",
+    "bio": "Apaixonada por vida saudável e movimento. Compartilho dicas de treino, receitas e bem-estar para transformar sua rotina.",
+    "instagram_link": "https://instagram.com/carlarossifit",
+    "contato_link": "mailto:contato@carlarossifit.com",
+    "video_url": "https://www.youtube.com/embed/ScMzIvxBSi4"
+  },
+  {
+    "id": 2,
+    "nome": "Pedro Andrade",
+    "arroba": "pedrotech",
+    "nicho": "tech",
+    "foto_url": "assets/images/pedro-andrade.jpeg",
+    "foto_placeholder_url": "assets/images/pedro-andrade.jpeg",
+    "bio": "Explorando o futuro da tecnologia, um gadget de cada vez. Reviews, tutoriais e as últimas novidades do mundo tech.",
+    "instagram_link": "https://instagram.com/pedrotech",
+    "contato_link": "mailto:contato@pedrotech.com",
+    "video_url": "https://www.youtube.com/embed/ScMzIvxBSi4"
+  },
+  {
+    "id": 3,
+    "nome": "Lia Mendonça",
+    "arroba": "liamoda",
+    "nicho": "moda",
+    "foto_url": "assets/images/lia-mendonca.jpeg",
+    "foto_placeholder_url": "assets/images/lia-mendonca.jpeg",
+    "bio": "A moda como forma de expressão. Looks, tendências e dicas de estilo para você se sentir confiante e autêntica.",
+    "instagram_link": "https://instagram.com/liamoda",
+    "contato_link": "mailto:contato@liamoda.com",
+    "video_url": "https://www.youtube.com/embed/ScMzIvxBSi4"
+  },
+  {
+    "id": 4,
+    "nome": "Sofia Lima",
+    "arroba": "sofia.lifestyle",
+    "nicho": "lifestyle",
+    "foto_url": "assets/images/sofia-lima.jpeg",
+    "foto_placeholder_url": "assets/images/sofia-lima.jpeg",
+    "bio": "Explorando a beleza do dia a dia. Dicas de organização, decoração, viagens e autocuidado para uma vida mais leve e feliz.",
+    "instagram_link": "https://instagram.com/sofia.lifestyle",
+    "contato_link": "mailto:contato@sofialifestyle.com",
+    "video_url": "https://www.youtube.com/watch?v=ScMzIvxBSi4"
+  },
+  {
+    "id": 5,
+    "nome": "Ricardo Alves",
+    "arroba": "ricardo.cooks",
+    "nicho": "gastronomia",
+    "foto_url": "assets/images/ricardo-alves.jpeg",
+    "foto_placeholder_url": "assets/images/ricardo-alves.jpeg",
+    "bio": "Chef amador transformando ingredientes simples em pratos inesquecíveis. Receitas práticas e saborosas para todos os gostos.",
+    "instagram_link": "https://instagram.com/ricardo.cooks",
+    "contato_link": "mailto:contato@ricardocooks.com",
+    "video_url": "https://www.youtube.com/watch?v=ScMzIvxBSi4"
+  }
+]
