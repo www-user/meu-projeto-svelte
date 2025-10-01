@@ -1,5 +1,5 @@
 {
-	"name": "UconnectS",
+	"name": "uconnects",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -33,6 +33,8 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
+		"@fontsource/inter": "^5.2.8",
+		"@fontsource/playfair-display": "^5.2.8",
 		"@storyblok/svelte": "^5.2.9",
 		"zod": "^4.1.9"
 	}

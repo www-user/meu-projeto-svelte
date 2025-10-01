@@ -21,7 +21,7 @@
         <div class="header-content">
             <a href="/" class="logo">UconnectS</a>
             <nav class="main-nav">
-                <a href="/inscreva-se" class="cta-button" data-sveltekit-prefetch>Inscreva-se</a>
+                <a href="/inscreva-se" class="cta-button">Inscreva-se</a>
             </nav>
         </div>
     </header>
