@@ -18,7 +18,7 @@
 				aria-hidden="true"
 			/>
 			<img
-				src={image.filename + '/m/600x0'}
+				src={image.filename + '/m/600x0/filters:format(webp)'}
 				alt={image.alt || 'Imagem da galeria'}
 				class="full-res"
 				loading="lazy"
