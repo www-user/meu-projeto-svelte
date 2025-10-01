@@ -46,7 +46,7 @@
 		<div class="grid">
 			{#each filteredInfluencers as influencer, i (influencer.id)}
 				<div in:fly={{ y: 20, duration: 500, delay: 500 + i * 80 }} style="min-width: 0;">
-					<InfluencerCard {influencer} />
+					<InfluencerCard {influencer} priority={i === 0} />
 				</div>
 			{/each}
 		</div>
