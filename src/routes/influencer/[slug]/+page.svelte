@@ -125,6 +125,7 @@
 		display: flex;
 		gap: 1rem;
 		justify-content: center;
+		flex-wrap: wrap;
 	}
 	.btn {
 		padding: 0.8rem 1.8rem;
