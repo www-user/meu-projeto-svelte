@@ -1,24 +1,38 @@
 <script>
-	import '../app.css';
+    import '../app.css';
 </script>
 
+<svelte:head>
+    <title>UbeConnect - Conectando Marcas e Criadores</title>
+    <meta
+        name="description"
+        content="UbeConnect é a plataforma para encontrar os melhores criadores de conteúdo e influenciadores digitais em sua cidade."
+    />
+    <meta property="og:title" content="UbeConnect - Conectando Marcas e Criadores" />
+    <meta
+        property="og:description"
+        content="Encontre os melhores criadores de conteúdo para sua marca."
+    />
+    <meta property="og:type" content="website" />
+</svelte:head>
+
 <div class="site-wrapper">
-	<header class="site-header">
-		<div class="header-content">
-			<a href="/" class="logo">UbeConnect</a>
-			<nav class="main-nav">
-				<a href="/inscreva-se" class="cta-button">Inscreva-se</a>
-			</nav>
-		</div>
-	</header>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="/" class="logo">UbeConnect</a>
+            <nav class="main-nav">
+                <a href="/inscreva-se" class="cta-button">Inscreva-se</a>
+            </nav>
+        </div>
+    </header>
 
-	<main class="site-content">
-		<slot />
-	</main>
+    <main class="site-content">
+        <slot />
+    </main>
 
-	<footer class="site-footer">
-		<p>&copy; {new Date().getFullYear()} UbeConnect. Todos os direitos reservados.</p>
-	</footer>
+    <footer class="site-footer">
+        <p>&copy; {new Date().getFullYear()} UbeConnect. Todos os direitos reservados.</p>
+    </footer>
 </div>
 
 <style>

@@ -1,26 +1,31 @@
 <script lang="ts">
 	import type { Influencer } from '$lib/types';
-	const { influencer } = $props<{ influencer: Influencer }>();
+	const { influencer, priority = false } = $props<{ influencer: Influencer, priority?: boolean }>();
 	let loaded = $state(false);
+
+	
+	const optimizedImageUrl = `${influencer.foto_url}/m/800x0/filters:quality(80):format(webp)`;
+	const placeholderImageUrl = `${influencer.foto_placeholder_url}/m/20x0/filters:blur(10)`;
 </script>
 
 <a href="/influencer/{influencer.slug}" class="card-link">
 	<article class="card">
 		<div class="image-container">
 			<img
-				src={influencer.foto_placeholder_url}
+				src={placeholderImageUrl}
 				alt=""
 				class="placeholder"
 				aria-hidden="true"
 			/>
 			<img
-				src={influencer.foto_url}
+				src={optimizedImageUrl}
 				alt="Foto de {influencer.nome}"
 				class="full-res"
 				class:loaded
 				onload={() => (loaded = true)}
 				loading="lazy"
 				decoding="async"
+				fetchpriority={priority ? 'high' : 'auto'}
 			/>
 		</div>
 		<div class="content">

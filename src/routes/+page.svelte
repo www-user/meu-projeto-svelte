@@ -40,6 +40,8 @@
 		{/each}
 	</div>
 
+	<h2 class="visually-hidden">Nossos Criadores de Conteúdo</h2>
+
 	{#if filteredInfluencers && filteredInfluencers.length > 0}
 		<div class="grid">
 			{#each filteredInfluencers as influencer, i (influencer.id)}
@@ -116,5 +118,15 @@
 		color: var(--cor-texto-suave);
 		font-size: 1.2rem;
 		padding: 4rem 0;
+	}
+	.visually-hidden {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
 	}
 </style>
