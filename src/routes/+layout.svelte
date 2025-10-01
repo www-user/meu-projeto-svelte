@@ -3,12 +3,12 @@
 </script>
 
 <svelte:head>
-    <title>UbeConnect - Conectando Marcas e Criadores</title>
+    <title>Connect - Conectando Marcas e Criadores</title>
     <meta
         name="description"
-        content="UbeConnect é a plataforma para encontrar os melhores criadores de conteúdo e influenciadores digitais em sua cidade."
+        content="Connect é a plataforma para encontrar os melhores criadores de conteúdo e influenciadores digitais em sua cidade."
     />
-    <meta property="og:title" content="UbeConnect - Conectando Marcas e Criadores" />
+    <meta property="og:title" content="Connect - Conectando Marcas e Criadores" />
     <meta
         property="og:description"
         content="Encontre os melhores criadores de conteúdo para sua marca."
@@ -19,7 +19,7 @@
 <div class="site-wrapper">
     <header class="site-header">
         <div class="header-content">
-            <a href="/" class="logo">UbeConnect</a>
+            <a href="/" class="logo">Connect</a>
             <nav class="main-nav">
                 <a href="/inscreva-se" class="cta-button">Inscreva-se</a>
             </nav>
@@ -31,7 +31,7 @@
     </main>
 
     <footer class="site-footer">
-        <p>&copy; {new Date().getFullYear()} UbeConnect. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Connect. Todos os direitos reservados.</p>
     </footer>
 </div>
 

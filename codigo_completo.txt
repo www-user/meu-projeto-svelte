@@ -133,7 +133,7 @@ export const load: PageLoad = async () => {
 
 <div class="container">
 	<header class="page-header">
-		<h1 in:fly={{ y: -20, duration: 600, delay: 200 }}>UbeConnect</h1>
+		<h1 in:fly={{ y: -20, duration: 600, delay: 200 }}>Connect</h1>
 		<p class="subtitle" in:fly={{ y: -20, duration: 600, delay: 300 }}>
 			Conectando marcas e criadores de conteúdo em sua cidade.
 		</p>
